@@ -5,6 +5,7 @@
     <classes>
       <class name="com.app.mobile.test.StartApplication">
         <methods>
+          <include name="initializeElement"/>
           <include name="launchApp"/>
         </methods>
       </class> <!-- com.app.mobile.test.StartApplication -->
