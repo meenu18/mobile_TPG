@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4898" started-at="2017-08-28T13:52:29Z" finished-at="2017-08-28T13:52:34Z">
+  <suite name="Default suite" duration-ms="15707" started-at="2017-08-29T17:34:16Z" finished-at="2017-08-29T17:34:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4898" started-at="2017-08-28T13:52:29Z" finished-at="2017-08-28T13:52:34Z">
+    <test name="Default test" duration-ms="15707" started-at="2017-08-29T17:34:16Z" finished-at="2017-08-29T17:34:32Z">
       <class name="com.app.mobile.test.StartApplication">
-        <test-method status="PASS" signature="initializeElement()[pri:0, instance:com.app.mobile.test.StartApplication@5b275dab]" name="initializeElement" is-config="true" duration-ms="8943" started-at="2017-08-28T19:22:20Z" finished-at="2017-08-28T19:22:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.app.mobile.test.StartApplication@ae45eb6]" name="setUp" is-config="true" duration-ms="9241" started-at="2017-08-29T23:04:07Z" finished-at="2017-08-29T23:04:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializeElement -->
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.app.mobile.test.StartApplication@5b275dab]" name="launchApp" duration-ms="4851" started-at="2017-08-28T19:22:29Z" finished-at="2017-08-28T19:22:34Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.app.mobile.test.StartApplication@ae45eb6]" name="launchApp" duration-ms="15657" started-at="2017-08-29T23:04:16Z" finished-at="2017-08-29T23:04:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->

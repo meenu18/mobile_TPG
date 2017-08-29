@@ -8,12 +8,24 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeSuite;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public abstract class BaseTest {
-	public static AndroidDriver driver;
+	 public static AndroidDriver<MobileElement> driver;
+    String appiumServiceUrl="http://127.0.0.1:4723/wd/hub";
+    
 	@BeforeSuite(alwaysRun=true)
-	public void initializeElement() throws MalformedURLException{
+	public void setUp() throws MalformedURLException{
+		/*AppiumDriverLocalService appiumService = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+		.usingDriverExecutable(new File ("C:\\Program Files\\nodejs\\node.exe"))
+		.withAppiumJS(new File ("C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\appium.js"))
+		.withLogFile(new File("D:\\apiumlogs\\logs.txt")));
+		appiumService.start();
+        appiumServiceUrl = appiumService.getUrl().toString();
+        System.out.println("Appium Service Address : - "+ appiumServiceUrl);*/
 		
 	File classpathRoot = new File(System.getProperty("user.dir"));
 	File appDir = new File(classpathRoot, "/Apps/IAmBanking/");
@@ -28,7 +40,11 @@ public abstract class BaseTest {
 	capabilities.setCapability("appPackage", "com.iambank.debug");
 	capabilities.setCapability("appActivity", "com.iambank.onboarding.ui.activity.IntroActivity");
 
-	driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-	driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);}
+	driver = new AndroidDriver<MobileElement>(new URL(appiumServiceUrl), capabilities);
+	driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+	//appiumService.stop();
+	}
+	
+	
 }
 
