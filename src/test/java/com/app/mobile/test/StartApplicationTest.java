@@ -2,7 +2,6 @@ package com.app.mobile.test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.app.mobile.pages.CountryPage;
 import com.app.mobile.pages.FirstPage;
 import com.app.mobile.pages.IntroductoryPage;
@@ -23,7 +22,7 @@ public class StartApplicationTest extends BaseTest {
 	String expectedNumberMsg = "We’ll use this to sign in later.";
 	
 	@Test
-	public void launchAppTest() throws InterruptedException{
+	public void launchAppTest() throws InterruptedException {
 		IntroductoryPage introductoryPage = new IntroductoryPage(driver);		 
 		 Assert.assertTrue(introductoryPage.verifyProveItPageText(expectedIntroText));
 		 FirstPage firstPageobj =  introductoryPage.clickOnProveBtn();	
@@ -44,8 +43,6 @@ public class StartApplicationTest extends BaseTest {
 		 numberPage.clickNextBtn();
 		 numberPage.popUpPage();
 		 driver.quit();
-}
-	
-	
+	}
 
 }

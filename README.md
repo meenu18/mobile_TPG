@@ -25,17 +25,17 @@ Download Eclipse from https://eclipse.org/downloads/.
 Click on .exe file and install it.
 
 Create Maven Project:
-In the Eclipse IDE, navigate to File > New > Other… in order to bring up the project creation wizard.
-Scroll to the Maven folder, open it, and choose Maven Project. Then choose Next.
-You may choose to Create a simple project or forgo this option. Leave other options as is, and click Next.
-Now, you will need to enter information regarding the Maven Project you are creating. You may visit the Maven documentation for a more in-depth look at the Maven Coordinates (http://maven.apache.org/pom.html#Maven_Coordinates). In general, the Group Id should correspond to your organization name, and the Artifact Id should correspond to the project’s name. The version is up to your discretion as is the packing and other fields. If this is a stand-alone project that does not have parent dependencies, you may leave the Parent Project section as is. Fill out the appropriate information, and click Finish.
-You will now notice that your project has been created. You will place your Java code in /src/main/java, resources in /src/main/resources, and your testing code and resources in /src/test/java and /src/test/resources respectively.
-Open the pom.xml file to view the structure Maven has set up. In this file, you can see the information entered in Step 4. You may also use the tabs at the bottom of the window to change to view Dependencies, the Dependency Hierarchy, the Effective POM, and the raw xml code for the pom file in the pom.xml tab.
+1. In the Eclipse IDE, navigate to File > New > Other… in order to bring up the project creation wizard.
+2. Scroll to the Maven folder, open it, and choose Maven Project. Then choose Next.
+3. You may choose to Create a simple project or forgo this option. Leave other options as is, and click Next.
+4. Now, you will need to enter information regarding the Maven Project you are creating. You may visit the Maven documentation for a more in-depth look at the Maven Coordinates (http://maven.apache.org/pom.html#Maven_Coordinates). In general, the Group Id should correspond to your organization name, and the Artifact Id should correspond to the project’s name. The version is up to your discretion as is the packing and other fields. If this is a stand-alone project that does not have parent dependencies, you may leave the Parent Project section as is. Fill out the appropriate information, and click Finish.
+5. You will now notice that your project has been created. You will place your Java code in /src/main/java, resources in /src/main/resources, and your testing code and resources in /src/test/java and /src/test/resources respectively.
+6. Open the pom.xml file to view the structure Maven has set up. In this file, you can see the information entered in Step 4,you may also use the tabs at the bottom of the window to change to view Dependencies, the Dependency Hierarchy, the Effective POM, and the raw xml code for the pom file in the pom.xml tab.
 You now have a new Java project with Maven enabled.
 
 Appium Client library and appium jar files for java:
-Add selenium maven dependency from https://mvnrepository.com/artifact/io.appium.
-Add maven dependency from https://mvnrepository.com/artifact/io.appium.
+1. Add selenium maven dependency from https://mvnrepository.com/artifact/io.appium.
+2. Add maven dependency from https://mvnrepository.com/artifact/io.appium.
 
 
 Android SDK Installation:
